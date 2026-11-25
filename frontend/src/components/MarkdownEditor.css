@@ -1,0 +1,54 @@
+.markdown-editor { min-width:0; min-height:65vh; color:#363636; --markdown-font-size:15px; }
+.markdown-editor .cm-editor { min-height:65vh; font-size:var(--markdown-font-size); background:transparent; }
+.markdown-editor .cm-editor.cm-focused { outline:0; }
+.markdown-editor .cm-scroller { font-family:inherit; overflow:visible; line-height:1.95; }
+.markdown-editor .cm-content { padding:0 0 48px; caret-color:#222; min-height:65vh; }
+.markdown-editor .cm-line { padding:0; overflow-wrap:anywhere; }
+.markdown-editor .cm-cursor, .markdown-editor .cm-dropCursor { border-left-color:#333; }
+.markdown-editor .cm-selectionBackground, .markdown-editor .cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground { background:#e1e1e1 !important; }
+.markdown-editor .cm-activeLine { background:transparent; }
+.markdown-editor-live .cm-gutters { display:none; }
+.markdown-editor .cm-md-syntax { color:#aaa; font-weight:400; font-style:normal; }
+.markdown-editor .cm-md-strong { font-weight:650; color:#272727; }
+.markdown-editor .cm-md-emphasis { font-style:italic; }
+.markdown-editor .cm-md-strikethrough { text-decoration:line-through; color:#888; }
+.markdown-editor .cm-md-inline-code { font-family:'Cascadia Code',Consolas,monospace; font-size:.91em; background:#f2f2f2; border-radius:3px; padding:1px 3px; }
+.markdown-editor .cm-md-code-text { font-family:'Cascadia Code',Consolas,monospace; }
+.markdown-editor .cm-md-link { color:#3d3d3d; text-decoration:underline; text-underline-offset:3px; text-decoration-color:#b2b2b2; }
+.markdown-editor .cm-md-url, .markdown-editor .cm-md-code-info { color:#999; font-size:.9em; }
+.markdown-editor .cm-md-quote-text { color:#777; }
+.markdown-editor-live .cm-md-heading-1 { font-size:1.9em; font-weight:650; color:#252525; line-height:1.55; padding-top:14px; padding-bottom:12px; letter-spacing:-.45px; }
+.markdown-editor-live .cm-line:first-child.cm-md-heading-1 { padding-top:0; }
+.markdown-editor-live .cm-md-heading-2 { font-size:1.27em; font-weight:650; color:#303030; line-height:1.7; padding-top:15px; padding-bottom:7px; }
+.markdown-editor-live .cm-md-heading-3 { font-size:1.12em; font-weight:600; color:#333; padding-top:10px; padding-bottom:5px; }
+.markdown-editor-live .cm-md-heading-4, .markdown-editor-live .cm-md-heading-5, .markdown-editor-live .cm-md-heading-6 { font-size:1em; font-weight:600; padding-top:6px; }
+.markdown-editor-live .cm-md-heading-text { color:inherit; font-weight:inherit; }
+.markdown-editor-live .cm-md-code-line { background:#f8f8f8; padding-left:15px; padding-right:15px; font-family:'Cascadia Code',Consolas,monospace; font-size:.9em; line-height:1.85; }
+.markdown-editor-live .cm-md-code-start { border-radius:5px 5px 0 0; padding-top:8px; color:#999; }
+.markdown-editor-live .cm-md-code-end { border-radius:0 0 5px 5px; padding-bottom:8px; }
+.markdown-editor-live .cm-md-quote-line { border-left:2px solid #d4d4d4; padding-left:14px; color:#777; }
+.markdown-editor .cm-md-bullet { display:inline-block; min-width:.55em; color:#888; font-size:1.1em; line-height:1; text-align:center; }
+.markdown-editor .cm-md-task-checkbox { width:13px; height:13px; margin:0 5px 0 0; accent-color:#555; vertical-align:middle; cursor:pointer; }
+.markdown-editor-source .cm-scroller { font-family:'Cascadia Code',Consolas,'Microsoft YaHei',monospace; font-size:.91em; line-height:1.85; }
+.markdown-editor-source .cm-line { padding:0 8px; }
+.markdown-editor-source .cm-gutters { background:transparent; color:#b6b6b6; border:0; font-size:10px; padding-right:9px; }
+.markdown-editor-source .cm-activeLineGutter { background:#f3f3f3; color:#777; }
+.markdown-editor-source .cm-md-heading-text { font-weight:600; color:#333; }
+.markdown-editor-source .cm-md-inline-code { padding:0; background:transparent; font-size:1em; }
+.markdown-editor .cm-panels { background:#fafafa; border-color:#e5e5e5; color:#555; font-size:12px; }
+.markdown-editor .cm-search { display:flex; flex-wrap:wrap; gap:5px; align-items:center; padding:8px 10px; }
+.markdown-editor .cm-textfield { background:#fff; color:#333; border:1px solid #ddd; border-radius:4px; padding:3px 6px; font-size:12px; }
+.markdown-editor .cm-button { background:#fff; color:#555; border:1px solid #ddd; border-radius:4px; text-transform:none; font-size:11px; }
+.markdown-editor-readonly .cm-content { caret-color:transparent; }
+.cm-md-table-preview { margin:12px 0 18px; max-width:100%; overflow-x:auto; scrollbar-width:thin; }
+.cm-md-table-preview table { width:100%; border-collapse:collapse; font-size:.91em; line-height:1.75; cursor:text; }
+.cm-md-table-preview th, .cm-md-table-preview td { padding:9px 12px; border:1px solid #e3e7ed; vertical-align:top; min-width:70px; overflow-wrap:anywhere; }
+.cm-md-table-preview th { background:#f7f9fb; color:#4d5866; font-weight:600; }
+.cm-md-table-preview code { font-family:'Cascadia Code',Consolas,monospace; background:#f1f4f7; border-radius:3px; padding:2px 4px; font-size:.94em; }
+.cm-md-table-preview table:focus-visible { outline:2px solid #8198b7; outline-offset:-2px; }
+@media (max-width:640px) {
+  .markdown-editor .cm-editor { font-size:var(--markdown-font-size,14px); }
+  .markdown-editor-live .cm-md-heading-1 { font-size:1.65em; }
+  .markdown-editor-live .cm-md-code-line { padding-left:11px; padding-right:11px; }
+  .markdown-editor-source .cm-gutters { padding-right:5px; }
+}

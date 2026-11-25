@@ -1,0 +1,47 @@
+.local-search-modal .ant-modal-content { padding: 24px; }
+.local-search { color: #2d333a; min-width: 0; }
+.local-search button, .local-search input { font: inherit; }
+.local-search button { cursor: pointer; }
+.local-search button:disabled { opacity: .45; cursor: not-allowed; }
+.local-search button:focus-visible, .local-search input:focus-visible { outline: 2px solid #9aacc1; outline-offset: 3px; }
+.local-search-intro { margin: 10px 0 19px; color: #777f89; font-size: 13px; line-height: 1.8; }
+.local-search-scope { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; margin-bottom: 10px; color: #8a919a; font-size: 12px; line-height: 1.7; }
+.local-search-scope > :first-child { color: #5f6b78; min-width: 0; overflow-wrap: anywhere; }
+.local-search-form { display: flex; align-items: stretch; gap: 9px; }
+.local-search-input { display: flex; align-items: center; gap: 9px; min-width: 0; flex: 1; border: 1px solid #e3e7ec; border-radius: 7px; padding: 0 12px; color: #8794a3; }
+.local-search-input:focus-within { border-color: #a6b6ca; }
+.local-search-input svg { flex-shrink: 0; }
+.local-search-input input { min-width: 0; width: 100%; border: 0; outline: 0 !important; background: transparent; color: #2d333a; padding: 10px 0; font-size: 14px; }
+.local-search-input input::placeholder { color: #959da7; }
+.local-search-submit { flex-shrink: 0; border: 1px solid #333b45; border-radius: 7px; padding: 0 17px; background: #333b45; color: #fff; font-size: 13px !important; }
+.local-search-submit:hover:not(:disabled) { background: #495360; }
+.local-search-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 9px; gap: 12px; }
+.local-search-secondary, .local-search-source { display: inline-flex; align-items: center; justify-content: center; gap: 5px; padding: 5px 0; min-height: 30px; border: 0; background: transparent; color: #687d95; font-size: 12px !important; }
+.local-search-secondary:hover:not(:disabled), .local-search-source:hover { color: #344b68; text-decoration: underline; text-underline-offset: 3px; }
+.local-search-feedback { display: flex; align-items: flex-start; gap: 7px; color: #6b7c8a; margin: 14px 0 0; font-size: 12px; line-height: 1.8; }
+.local-search-feedback svg { flex-shrink: 0; margin-top: 3px; color: #75988b; }
+.local-search-feedback .local-search-spinner { color: #839ab5; }
+.local-search-error { margin-top: 14px; padding: 10px 12px; border: 1px solid #eadbd6; border-radius: 6px; color: #8e5a4d; background: #fcf9f8; font-size: 13px; line-height: 1.8; overflow-wrap: anywhere; }
+.local-search-results { margin-top: 20px; }
+.local-search-result-count { margin: 0 0 3px; color: #79838f; font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.local-search-result-list { list-style: none; margin: 0; padding: 0; max-height: min(55vh, 470px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.local-search-result { padding: 17px 2px 14px 0; border-bottom: 1px solid #eceff2; }
+.local-search-result-heading { display: flex; align-items: baseline; gap: 10px; }
+.local-search-result-heading h3 { min-width: 0; margin: 0; color: #303944; font-weight: 500; font-size: 14px; line-height: 1.75; overflow-wrap: anywhere; }
+.local-search-result-heading > span { flex-shrink: 0; color: #939ba6; font-size: 11px; }
+.local-search-heading-path { margin: 5px 0 10px; font-size: 11px; color: #8b95a1; line-height: 1.75; overflow-wrap: anywhere; }
+.local-search-excerpt { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-clamp: 5; margin: 0 0 5px; color: #5b6571; white-space: pre-wrap; overflow: hidden; overflow-wrap: anywhere; font-size: 13px; line-height: 1.9; }
+.local-search-empty { padding: 32px 12px; text-align: center; color: #8d96a1; font-size: 12px; line-height: 1.8; }
+.local-search-empty p { margin: 0 0 6px; color: #596574; font-size: 14px; }
+.local-search-context-note { margin: 12px 0 0; color: #929aa4; font-size: 11px; line-height: 1.8; overflow-wrap: anywhere; }
+.local-search-spinner { animation: local-search-spin 1.2s linear infinite; }
+@keyframes local-search-spin { to { transform: rotate(360deg); } }
+@media (max-width: 600px) {
+  .local-search-modal .ant-modal-content { padding: 20px; }
+  .local-search-form { gap: 7px; }
+  .local-search-input { padding: 0 9px; gap: 7px; }
+  .local-search-input input { font-size: 14px; }
+  .local-search-submit { padding: 0 12px; }
+  .local-search-result-list { max-height: 48vh; }
+}
+@media (prefers-reduced-motion: reduce) { .local-search-spinner { animation: none !important; } }
